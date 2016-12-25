@@ -25,12 +25,12 @@ for scr in jumbled:
     for perm in perms:
         p = ''.join(perm)
         i = i+1
-        if i % 5 == 0:
+        if i % 20 == 0:
             print ("Checking permutation " + str(i) + " of " + str(len(list(perms))))
         if p in dict:
             print p
             answers.append(p)
             break
 
-for answer in answers:
-    print (answer + " ")
+
+print ("Answers: " + " ".join(answers))
